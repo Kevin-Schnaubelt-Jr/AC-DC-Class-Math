@@ -1,20 +1,12 @@
 '''
 This program calculates voltage, current, and resistance for a circuit.
 '''
-import json
 
 class Circuit:
     def __init__(self, voltage={'?':'?'}, resistance={'?':'?'}, current={'?':'?'}):
         self.voltage = {'Voltage':voltage}
         self.resistance = {'Resistance':resistance}
         self.current = {'Current':current}
-
-    def print_circuit(self):
-        for key, value in self.items():
-            print('--', key, '--')
-            # Again iterate over the nested dictionary
-            for subject, score in value.items():
-                print(subject, ' : ', score)
 
     def add_to_resistance(self):
         self.resistance['Resistance'] = {'Rt':resistance_total}
@@ -31,9 +23,8 @@ class Circuit:
 def print_circuit(input_dict):
     for key, value in input_dict.items():
         print('--', key, '--')
-        # Again iterate over the nested dictionary
-        for subject, score in value.items():
-            print(subject, ' : ', score)
+        for nested_key, nested_value in value.items():
+            print(nested_key, ' : ', nested_value)
 
 
 circuit_1 = Circuit()
