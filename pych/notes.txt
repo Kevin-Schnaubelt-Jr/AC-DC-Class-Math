@@ -1,0 +1,35 @@
+14 and 15th final
+
+psych goals
+    description: what is happening?
+    explanation: why is it happening?
+    prediction: when will it happen again?
+    control: how can it be changed?
+
+scientific approach steps
+    perceive the question.
+    form a hypothesis.
+        tentative explanation of a phenomenon based on observations.
+    test the hypothesis.
+    draw conclusions.
+    report your results.
+        others may replicate study or experiment to see whether same results will be obtained to demonstrate reliability of results.
+
+research paper references
+    require 4. 2 must be peer review
+
+Naturalistic observation
+    advantage: 
+        realistic picture of behavior
+    disadvantage:
+        observer effect:
+            acting different when watched.
+        observer bias
+        each naturalistic setting is unique. may not apply in all situations
+
+lab observations
+    advantage:
+        control
+    disadvantage
+        artificial environment 
+
