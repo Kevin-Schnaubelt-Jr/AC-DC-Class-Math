@@ -43,7 +43,15 @@ Shannon's question
 40x + 8(1.5x) = 494
 
 '''
+
+'''
+office hours
+building 10 room 230
+'''
+
 x = symbols('x')
 
-equation = Eq(40 * x + 8 * (1.5 * x) , 494)
+equation = Eq(
+    0.5 * x, 0.2 + 0.1 * x
+    )
 print(solve(equation))
