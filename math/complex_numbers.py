@@ -30,16 +30,18 @@ x**2 + 81 = 0
 -9i, 9i
 '''
 
-# x = symbols('x')
+x = symbols('x')
 
-# equation = Eq(
-#     x**2 + 81, 0
-# )
-
-# print(solve(equation))
-
-
-
-print(
-    complex(2, -3) + complex(4, 1)
+equation = Eq(
+    x**3 - 1, 0
 )
+
+print(solve(equation))
+
+
+
+# print(
+#     sqrt(
+#         complex(8, 6) * complex(-8, 6)
+#     )
+# )
