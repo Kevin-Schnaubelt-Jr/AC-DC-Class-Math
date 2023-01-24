@@ -30,10 +30,25 @@ x**2 + 81 = 0
 -9i, 9i
 '''
 
+'''
+negative sqrt(-[number]) results in a imag number. 5i or 20j
+'''
+
+'''
+x**3 - 125 = 0
+use factoring formula
+'''
+
 x = symbols('x')
 
+# equation = Eq(
+#     x**3 - 1, 0
+# )
+
+# print(solve(equation))
+
 equation = Eq(
-    x**3 - 1, 0
+    x**3 - 8, 0
 )
 
 print(solve(equation))
