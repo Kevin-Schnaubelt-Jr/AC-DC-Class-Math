@@ -43,4 +43,50 @@
                 empiricism is a theory that states that all knowledge originates from experience. 
                 "new atlantis" 1627 - 1662 - royal society founded as an inspiration
 
+4) leading figures -
+    A) copernicus - (1473 - 1543) - well educated. background in law, astronomy, philosophy. 
+        1) background => polish priest
+        2) on the revolutions of the heavenly spheres - life's work. waits until on his deathbed to publish
+            (1543) => motion is relative. 
+    B) Tycho Brahe - [tico brah] (1546 - 1601) - family made money on shipping tolls. says all planets go around the sun, but the earth is still the center.
+        1) background => danish lawyer
+        2) most advanced information => finest instruments - develops a observatory.
+        * offends danish government and is exiled from denmark. ends up in Prague. before he dies he meets kepler.
+    C) Kepler - (1571 - 1630)
+        1) background => german protestant minister - father was a professional soldier. - father dies and Kepler goes back to school for math.
+            becomes a professor.
+        2) Brahe's protege
+            abandons Brah's geocentric view after brah dies.
+        3) epitome of copernican astronomy - 3 basic laws of planetary motion. elliptical. tracked the cycle of mars. 
+            A) planets have oval orbits
+            B) planetary orbit speed caries - 
+            C) planetary revolutions vary => according to the distance to the sun.
+            * all 
+    D) Galileo - (1564 - 1642) - born in pizza =]. specializes in physics.
+        1) background => Italian doctor
+        2) Sidereal messenger - published in (1610) -
+            A) heavens are changeable + subject to the same physical laws as the earth.
+            B) popularized the telescope - people start going nuts over the thing and build them en masse.
+        3) dialogue on the two chief world systems:
+            Ptolemaic + copernican (1632)
+
+            A) blasted the geocentric theory + aristotle - attacked aristotle's theory on motion. 
+            B) catholic inquisition trouble.
+
+    E) Newton - (1642 - 1727)
+        1) background => English math professor - confounders of calculus.
+            * cambridge
+        2) mathematical principles of natural philosophy (1687)
+            * latin name = Principia
+            A) atomic structure for Matter
+            B) basic laws of motion for Matter
+                1) inertia - 
+                2) acceleration
+                3) cause & effect relationship - for every action there is an equal an opposite reaction. 
+            C) gravity - 
+        3) grand synthesis of modern cosmology.
+
+# eastern philosophy was irrational and wester was rational.
+
+
 
