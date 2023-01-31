@@ -31,7 +31,9 @@ examples
 x = symbols('x')
 
 print(
-    reduce_inequalities(1/5 * (x - 8) > x + 16, [])
+    reduce_inequalities(
+        (4 < x - 8, x - 8 < 10)
+    )
 )
 '''
 '''
@@ -41,10 +43,23 @@ print(
 '''
 compounded inequality
 4 < x - 8 < 10
-'''
 
 print(
     solve(
         4 < x - 8
-    )
+    ),
+    solve(
+        x - 8 < 10
+    ),
 )
+
+'''
+
+
+# print(
+#     linsolve(
+#         [
+#             4 < x - 8, x - 8 < 10
+#         ], x
+#     )
+# )
