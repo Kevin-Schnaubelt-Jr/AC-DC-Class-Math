@@ -107,6 +107,9 @@ y =  5
 
 x = symbols('x')
 
+
+'''
+
 equation = Eq(
     x, 0 + 5
 )
@@ -116,4 +119,157 @@ print(
         equation
     )
 )
-print('yo', sqrt(90))
+print('yo', sqrt(90)) ????
+'''
+
+'''
+intercepts
+
+(2,0) is an x intercept. always has a 0 for y
+(0,3) is a y intercept. always has a 0 for x
+
+5 * x + 4 * y = 20
+'''
+
+'''
+equation_x = Eq(
+    5 * x + 4 * 0, 20
+)
+equation_y = Eq(
+    5 * 0 + 4 * x, 20
+)
+
+print(
+    'x is (',
+    solve(
+        equation_x
+    ),', 0)'
+    ' y is (0,',
+    solve(
+        equation_y
+    ),
+    ')'
+)
+'''
+
+'''
+Ax+By=C is a line
+y=Mx+b is a line
+
+x and y dont have any exponents besides 1
+
+example 
+3 * x + 4 * y = 12
+(4,0), (0,3)
+
+y = 3 * x - 6
+(2,0), (0, -6)
+'''
+
+'''
+equation_x = Eq(
+    4 * x**2 + 16 * 0**2, 64
+)
+equation_y = Eq(
+    4 * 0**2 + 16 * x**2, 64
+)
+
+print(
+    'x is (',
+    solve(
+        equation_x
+    ),', 0)'
+    ' y is (0,',
+    solve(
+        equation_y
+    ),
+    ')'
+)
+'''
+
+'''
+if y**2 that variable has 2 points. (0,y) and (0,y)
+
+with 2 its nuts
+
+4 * x**2 + 16 * y**2, 64
+(-4,0) & (4,0), (0,-2) & (0,2)
+'''
+
+'''
+symmetry
+
+y - axis
+x - axis
+
+3 types
+
+x axis symmetry
+(3,4) => (3,-4)
+y changes signs
+
+y axis symmetry
+(3,4) => (-3,4)
+x changes signs
+
+origin symmetry
+(3,4) => (-3,-4)
+original points flips over. x and y change signs
+'''
+
+'''
+example
+original point is (-3,2)
+fin the new point after:
+A) x - axis symmetry
+B) y axis symmetry
+C) original
+
+A) (-3,-2)
+B) (3,2)
+C) (3,-2)
+'''
+
+'''
+Graphs and Symmetry
+y- axis symmetry | U or ^
+(-3,9)      (3,9)
+    (-2,5) (2,5)
+        (0,1)
+
+x - axis symmetry | < or >
+        (4,4)
+    (1,1)
+(0,0)
+    (1,4)
+        (4,-4)
+
+origin symmetry | / or \
+                (2,8)
+            (1,1)
+        (0,0)
+    (-1,-1)
+(-2,-8)
+'''
+
+'''
+determine intercepts and and symmetry
+    >
+(-5,0)
+one intercept on the line. y is 0
+
+    ^U
+    (-5,5)
+(-6,0),(0,0),(6,0)
+          (5,-5)
+3 intercepts on the line. ys are 0. and has origin symmetry as x and y change signs for that 5s points.
+
+
+intercepts in symmetry
+        |
+--------[==]------
+      //
+     //
+x intercepts are all values between 2 and 0 including 2, which is an interval. [2,0] is all our intercepts.
+y intercept is (0,0)
+'''
