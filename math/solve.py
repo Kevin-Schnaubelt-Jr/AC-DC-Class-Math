@@ -20,7 +20,7 @@ from sympy import *
 #     30**2 - 4 * 9 * 25
 # )
 
-# reduce inqueatlies
+# reduce inequities
 x = symbols('x')
 
 print(
