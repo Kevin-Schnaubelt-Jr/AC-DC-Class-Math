@@ -160,7 +160,7 @@ def perpendicular_find(x,y,m):
         ),
         'm = ' + str(m_negative_reciprocal_str)
     )
-perpendicular_find(2,-6,['+','1','3'])
+# perpendicular_find(2,-6,['+','1','3'])
 
 
 '''
