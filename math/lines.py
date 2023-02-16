@@ -35,9 +35,9 @@ example 2
 
 '''
 
-def line_intercept_form():
-    first_point = 2,4
-    second_point = 4,3
+def line_intercept_form(first, second):
+    first_point = first
+    second_point = second
     M = f'{(second_point[1] - first_point[1])} / {(second_point[0] - first_point[0])}'
     M_number = (second_point[1] - first_point[1]) / (second_point[0] - first_point[0])
     # print(M)
@@ -67,4 +67,81 @@ so M=3 and M=-1/3 are negative reciprocals.
 y = -1/3x - 4
 find the parallel will be M=-1/3 (just put -1/3)
 find the perpendicular will be M=3 (just put 3)
+'''
+
+'''
+parallel if slopes are equal 1st M and 2nd M
+perpendicular if slopes are negative reciprocals 1st M = -1/2nd M
+
+example given y=3*x parallel
+point (-2,3)
+so 3 = 3*(-2) + b
+b = 9
+
+answer is y = 3*x + 9
+
+y=3*x perpendicular
+(-2,3)
+negative reciprocal for the M, so -1/3
+so y = -1/3 * x + b
+find be by doing 3 = -1/3 * (-2) + b
+b = 7/3
+
+y = -1/3 * x + 7/3
+'''
+
+'''
+find equation of a line parallel to y= -1/3 * x + 3 parallel
+points (1,3)
+
+answer y = -1/3 * x + 10/3
+
+find equation of a line y = -2/5 * x -4 perpendicular
+points (2,5)
+
+y = 5/2 * x + 0
+'''
+
+def parallel_find():
+    b = symbols('b')
+    y = 3
+    x = 1
+    m = (-1/3)
+    equation = Eq(
+        y, m*x + b
+    )
+    print(
+        solve(
+            equation
+        )
+    )
+parallel_find()
+
+def perpendicular_find():
+    b = symbols('b')
+    y = 5
+    x = 2
+    m = ['-','2','5']
+    if m[0] == '-':
+        m_negative_reciprocal = (int(m[2]) / int(m[1]))
+    else:
+        m_negative_reciprocal = (-int(m[2]) / int(m[1]))
+    equation = Eq(
+        y, m_negative_reciprocal *x + b
+    )
+    print(
+        solve(
+            equation
+        )
+    )
+perpendicular_find()
+
+
+'''
+point slope form
+y - 1st y = M (x - 1st x)
+
+slope = 3
+point (1,5)
+answer: y-5=3(x-1)
 '''
