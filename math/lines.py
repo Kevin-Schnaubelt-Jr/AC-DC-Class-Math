@@ -20,7 +20,7 @@ find equation of the line. answer in slope intercept form = y=mx+b
 example:
 find the equation of a line that goes through (2,4) and (4,3)
 
-m = second y - first y / second x - first x which is 3-4/4-2 which is -1/2
+m = 2nd y - 1st y / 2nd x - 1st x which is 3-4/4-2 which is -1/2
 so y = -1/2 * x + b
 
 take one of the points, doesn't matter which and do this: for points (2,4) do 4 = -1/2 * 2 + b
@@ -28,6 +28,24 @@ b = 5
 
 so y = -1/2 * x + 5
 '''
+def find_b(x,y,m):
+    b = symbols('b')
+    equation = Eq(
+        y, m*x+b
+    )
+    print(
+        'b = ',
+        solve(equation)
+    )
+# find_b(-3,5,3)
+
+
+def find_m(x_1st,y_1st,x_2nd,y_2nd):
+    m = (y_2nd - y_1st) / (x_2nd - x_1st)
+    print('m = ', m)
+    return m
+# m = find_m(-3,-6,-1,-7)
+
 
 '''
 example 2
@@ -102,39 +120,47 @@ points (2,5)
 y = 5/2 * x + 0
 '''
 
-def parallel_find():
+def parallel_find(x,y,m):
     b = symbols('b')
-    y = 3
-    x = 1
-    m = (-1/3)
+    # x = 1
+    # y = 3
+    # m = (-1/3)
     equation = Eq(
         y, m*x + b
     )
     print(
+        'b = ',
         solve(
             equation
         )
     )
-parallel_find()
+# m = (-1/3)
+# parallel_find(-3,-6,(m))
 
-def perpendicular_find():
+
+def perpendicular_find(x,y,m):
     b = symbols('b')
-    y = 5
-    x = 2
-    m = ['-','2','5']
+    # x = 2
+    # y = -6
+    # m = ['+','1','3']
     if m[0] == '-':
         m_negative_reciprocal = (int(m[2]) / int(m[1]))
+        m_negative_reciprocal_str =  m[2] + '/' + m[1]
     else:
         m_negative_reciprocal = (-int(m[2]) / int(m[1]))
+        m_negative_reciprocal_str = '-', m[2] + '/' + m[1]
+
     equation = Eq(
         y, m_negative_reciprocal *x + b
     )
     print(
+        'b = ',
         solve(
             equation
-        )
+        ),
+        'm = ' + str(m_negative_reciprocal_str)
     )
-perpendicular_find()
+perpendicular_find(2,-6,['+','1','3'])
 
 
 '''
@@ -145,3 +171,9 @@ slope = 3
 point (1,5)
 answer: y-5=3(x-1)
 '''
+
+# m = 
+# m = find_m(-3,-6,-1,-7)
+# parallel_find(-3,-6,(m))
+
+# 
