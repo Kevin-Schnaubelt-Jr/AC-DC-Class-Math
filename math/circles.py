@@ -65,14 +65,16 @@ so x**2 + y**2 = 82
 #     sqrt( (0-(-9))**2 + (0-1)**2  )
 # )
 
+# fairly simple. Just the formula for distance.
 def find_r(first_x, first_y, second_x, second_y):
-    print(
-        'r =',
-        nsimplify(
-            sqrt(
-                (second_x - first_x)**2 + (second_y - first_y)**2
-            )
+    r = nsimplify(
+        sqrt(
+            (second_x - first_x)**2 + (second_y - first_y)**2
         )
+    )
+
+    print(
+        f'r = {r} \nr2 = {r**2}'
     )
 # find_r(-9,1,0,0)
 
@@ -83,7 +85,7 @@ point (1,4)
 
 (x-2)**2 + (y-3)**2 = sqrt(2)
 '''
-find_r(1,4,2,3)
+# find_r(1,4,2,3)
 
 
 '''
@@ -93,15 +95,23 @@ point 2  = (10,8)
 (1st x + 2nd x)/2, (1st y + 2nd y)/2 = (11/2,8)
 so (x=11/2)**2 + (y-8)**2 = r**2
 '''
-find_r(1,8,11/2,8)
+# find_r(1,8,11/2,8)
 
 '''
 (5,6) (-3,4)
 '''
-
+# question gives 2 points and neither are the center.
+# finds the center using the formula for midpoint
 def find_center(first_x, first_y, second_x, second_y):
-    print(
-        (first_x + second_x)/2, (first_y + second_y)/2
-    )
-find_center(5,6,-3,4)
-find_r(1,5,5,6)
+    center_x = nsimplify((first_x + second_x)/2)
+    center_y = nsimplify((first_y + second_y)/2)
+    print(f'center = ({center_x}, {center_y})')
+    # now that we have center, we can find the radius using it and any previous point. We just use the first.
+    find_r(center_x, center_y, first_x, first_y)
+# find_center(5,6,-3,4)
+
+# find_r(2,-8,0,0)
+
+# find_center(4,8,15,8)
+
+
