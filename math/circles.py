@@ -100,7 +100,7 @@ so (x=11/2)**2 + (y-8)**2 = r**2
 '''
 (5,6) (-3,4)
 '''
-# question gives 2 points and neither are the center.
+# question gives 2 "END" points and neither are the center.
 # finds the center using the formula for midpoint
 def find_center(first_x, first_y, second_x, second_y):
     center_x = nsimplify((first_x + second_x)/2)
@@ -113,5 +113,14 @@ def find_center(first_x, first_y, second_x, second_y):
 # find_r(2,-8,0,0)
 
 # find_center(4,8,15,8)
+
+'''
+example:
+find the standard form of the circle that endpoints of a diameter (1,6) and (7,6)
+
+answer:
+(x-4)**2 + (y-6)**2 = 9
+'''
+find_center(1,6,7,6)
 
 
