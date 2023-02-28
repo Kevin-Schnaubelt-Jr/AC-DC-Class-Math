@@ -1,4 +1,5 @@
 from sympy import *
+from sympy.utilities.lambdify import implemented_function
 
 '''
 a "Function" is a rule or assignment that takes in an input (x) and maps it to some output (y)
@@ -58,16 +59,27 @@ because it goes from -oo to oo the domain is (-oo,oo)
 '''
 
 def function_1(x):
-    if x != 'x' and x != '-x':
-        x = int(x)
-        return 3 * x**2 + 2 * x - 4
-    else:
+    function_negativity = 1
+    if x == '-x':
+        x = (-symbols('x'))
+    elif x == 'negative x':
         x = symbols('x')
-        return solve(3 * x**2 + 2 * x - 4)
+        function_negativity = -1
+    elif x == 'test':
+        x = (symbols('x') + 3)
+        return nsimplify(3 * x**2 + 2 * x - 4)
+    else:
+        x = int(x)
+    return nsimplify(3 * x**2 + 2 * x - 4) * function_negativity
 
 # print(
 #     function_1(input('>: '))
 # )
+x = symbols('x')
+h = symbols('h')
+f = implemented_function('f', lambda x: 3 * x**2 + 3 * x - 2)
+lam_f = lambdify(x, f(x))
+print(lam_f(x) * -1)
 
 '''
 find the domain
@@ -123,4 +135,10 @@ add 6
 t >= 6
 so domain is everything great than or equal to 6, but not 8
 [6,8)U(8,oo)
+'''
+
+'''
+if -f(x)
+multiple equation by -1
+
 '''
