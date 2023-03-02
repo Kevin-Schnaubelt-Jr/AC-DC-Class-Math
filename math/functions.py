@@ -66,19 +66,20 @@ def function_1(x):
         x = symbols('x')
         function_negativity = -1
     elif x == 'test':
-        x = (symbols('x') + 3)
+        x = (symbols('x') + symbols('h'))
     else:
         x = int(x)
-    return simplify(3 * x**2 + 2 * x - 4) * function_negativity
+    return simplify(4*x**2 + 2*x - 2) * function_negativity
 
-print(
-    function_1(input('>: '))
-)
+# print(
+#     function_1(input('>: '))
+# )
 x = symbols('x')
 h = symbols('h')
-f = implemented_function('f', lambda x: 3 * x**2 + 3 * x - 2)
+f = implemented_function('f', lambda x: (9*x)/(x**2-16))
 lam_f = lambdify(x, f(x))
-# print(lam_f(x) * -1)
+# print(nsimplify(simplify(lam_f(x))))
+
 
 '''
 find the domain
@@ -116,6 +117,12 @@ so divide -2 divide or multiply by a negative flop the inequality
 x >= -2
 (-oo,-2]
 '''
+# fractions
+denominator_equation = Eq(4*x-24,0)
+print(solve(denominator_equation))
+
+# sqrt
+print(reduce_inequalities(x-4 >= 0))
 
 '''
 example 4: find domain
