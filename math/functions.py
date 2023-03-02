@@ -67,19 +67,18 @@ def function_1(x):
         function_negativity = -1
     elif x == 'test':
         x = (symbols('x') + 3)
-        return nsimplify(3 * x**2 + 2 * x - 4)
     else:
         x = int(x)
-    return nsimplify(3 * x**2 + 2 * x - 4) * function_negativity
+    return simplify(3 * x**2 + 2 * x - 4) * function_negativity
 
-# print(
-#     function_1(input('>: '))
-# )
+print(
+    function_1(input('>: '))
+)
 x = symbols('x')
 h = symbols('h')
 f = implemented_function('f', lambda x: 3 * x**2 + 3 * x - 2)
 lam_f = lambdify(x, f(x))
-print(lam_f(x) * -1)
+# print(lam_f(x) * -1)
 
 '''
 find the domain
