@@ -112,5 +112,35 @@ example: is f(x) decreasing on [-2,5]?
 If it is decreasing, it needs to go down from [-2,5]
 so on point f(x,-2) is lower, so its decreasing.
 
+Constant is no change?
+
+'''
+
+'''
+Local Max/ Min - (c, f(c))
+Local max accurse x=c, local min accurse at x=c
+So, for max, its at the apex of a curve decreasing to it's left and right, and for min, it's increasing to it's left and right.
+'''
+
+'''
+example 1:
+Question 1, is the graph increasing from -oo to -6 (-oo,6]?
+
+Question 2, list the intervals of increasing and decreasing.
+
+Question 3, identify and local max.
+
+Question 4, identify and local min.
+
+
+Answer 1: 
+yes.
+
+Answer 2: 
+homework is looking for stuff le [-6,1], [3,6]
+
+Answer 3:
+homework will say "local max occur at "x= -6,3 and y= 12,4
+It's just the maxs and mins x and y coordinates. 
 '''
 
