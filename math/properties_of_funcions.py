@@ -81,25 +81,25 @@ def is_it_even_or_odd(func, result):
 
 def example_1(x):
     return simplify(3*x**2 + x - 1)
-print('example 1', example_1(-x))
-print('example 1 is', is_it_even_or_odd(example_1(x),example_1(-x)))
+# print('example 1', example_1(-x))
+# print('example 1 is', is_it_even_or_odd(example_1(x),example_1(-x)))
 
 def example_2(x):
     return simplify(3/(x**10) - x**4)
-print('example 2', example_2(-x))
-print('example 2 is', is_it_even_or_odd(example_2(x),example_2(-x)))
+# print('example 2', example_2(-x))
+# print('example 2 is', is_it_even_or_odd(example_2(x),example_2(-x)))
 
 
 def example_3(x):
     return simplify(7*x**3 + 3)
-print('example 3', example_3(-x))
-print('example 3 is', is_it_even_or_odd(example_3(x),example_3(-x)))
+# print('example 3', example_3(-x))
+# print('example 3 is', is_it_even_or_odd(example_3(x),example_3(-x)))
 
 
 def example_4(x):
     return simplify((-7*x**3)/(3*x**2+8))
-print('example 4', example_4(-x))
-print('example 4 is', is_it_even_or_odd(example_4(x),example_4(-x)))
+# print('example 4', example_4(-x))
+# print('example 4 is', is_it_even_or_odd(example_4(x),example_4(-x)))
 
 '''
 Increasing and decreasing - from left to right, y coordinates is less on the second function so its increasing. 
@@ -143,4 +143,10 @@ Answer 3:
 homework will say "local max occur at "x= -6,3 and y= 12,4
 It's just the maxs and mins x and y coordinates. 
 '''
+
+def example_4(x):
+    return simplify((-5*x**3)/(3*x**2 + 8))
+print('homework question', example_4(-x))
+print('it is', is_it_even_or_odd(example_4(x),example_4(-x)))
+
 
