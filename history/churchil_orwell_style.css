@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    color: white;
+    background-color: #0A0B0B;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
+}
+body {
+    margin: 96px;
+}
+
+#page-index {
+    text-align: right;
+}
+
+#head {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#center-text {
+    text-align: center;
+}
+
+.italic{
+    font-style: italic;
+}
