@@ -106,7 +106,7 @@ def piecewise_function(x):
 # print('piecewise function for 0 =',piecewise_function(0))
 # print('piecewise function for 1 =',piecewise_function(1))
 # print('piecewise function for 3 =',piecewise_function(3))
-print('piecewise function for -1 =',piecewise_function(-1))
+# print('piecewise function for -1 =',piecewise_function(-1))
 
 
 # f(x) = {x**2 if x < 0, 2 if x = 0, 2*x + 2 if x > 0}
@@ -117,9 +117,9 @@ def piecewise_example_1(x):
         return 2
     elif x > 0:
         return x*2 + 2
-print('piecewise example_1 for -1 =', piecewise_example_1(-1))
-print('piecewise example_1 for 0 =', piecewise_example_1(0))
-print('piecewise example_1 for 1 =', piecewise_example_1(1))
+# print('piecewise example_1 for -1 =', piecewise_example_1(-1))
+# print('piecewise example_1 for 0 =', piecewise_example_1(0))
+# print('piecewise example_1 for 1 =', piecewise_example_1(1))
 
 '''
 graphing piecewise functions
@@ -158,3 +158,14 @@ def piecewise_example_2(x):
     elif x > 1:
         return -x + 3
 
+# Homework ----
+def homework_function(x):
+    if x >= -3 and x <= 5:
+        return 3*x-1
+    # elif x == 0:
+    #     return 0
+    elif x > 5 and x <= 6:
+        return x**3 - 5
+print(homework_function(
+    6
+))
