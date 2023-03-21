@@ -10,10 +10,10 @@
     line-height: 2;
 }
 body {
-    margin: 96px;
+    margin: 0;
 }
 
-#page-index {
+.page-index {
     text-align: right;
 }
 
@@ -28,4 +28,8 @@ body {
 
 .italic{
     font-style: italic;
+}
+
+.in-line-margin{
+    margin: 2rem;
 }
