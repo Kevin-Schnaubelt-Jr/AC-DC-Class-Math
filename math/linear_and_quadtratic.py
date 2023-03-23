@@ -19,8 +19,19 @@ constant rate of change
 f(b) - f(a)/ b-a
 From x=a to x=b
 same as slope = y2-y1/x2-x1
-
 '''
+
+# def example_linear_1(x):
+#     return 3*x+1
+
+# print( (example_linear_1(1) - example_linear_1(3)) / (1-3)  )
+# This equals 3, so then 3 over 1 3/1 is rise and run.
+
+def example_linear_2(x):
+    return (1/2)*x-6
+print( nsimplify( (example_linear_2(-6) - example_linear_2(1/2)) / (-6-(1/2)))  )
+
+
 
 '''
 Quadratic Function
@@ -78,7 +89,21 @@ a = 4. it bigger than 0, so the graph is opening up "U". so there will be a mini
 h = -b / 2a = (-5)/2*4 = -5/8
 so (-5/8,k)
 '''
-print( nsimplify(quadratic_function(-5/8)))
+
+def test_quad_func(x):
+    return -3*x**2 + 6*x
+the_h = -6/(2*-3)
+the_k = test_quad_func(the_h)
+print(f'{the_h=} {the_k=}')
+
+def revenue(p):
+    return -6*p**2 + 18000*p
+the_h = -18000/(2*-6)
+the_k = revenue(the_h)
+print(f'{the_h=} {the_k=}')
+
+
+# print( nsimplify(quadratic_function(-5/8)))
 
 '''
 so -137/16.
@@ -96,7 +121,7 @@ def example_function_1(x):
 
 h = -6 / 2*-3
 '''
-print('h = ', (-6)/(2 * -3))
+# print('h = ', (-6)/(2 * -3))
 '''
 so h = 1
 '''
@@ -135,14 +160,14 @@ exmaple: f(x) = -2(x-1)**2 + 6
 def example_2(x):
     return -2*(x-1)**2 + 6
 
-print(nsimplify((0)))
+# print(nsimplify((0)))
 
 
 '''
 3/2 is h
 '''
 
-print(nsimplify(example_2(0)))
+# print(nsimplify(example_2(0)))
 
 '''
 k is 11/2
