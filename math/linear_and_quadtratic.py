@@ -126,4 +126,30 @@ b = -21000 / 2*-7 = 15,000
 so (15000,k)
 so revenue(15000) = supposed to be 15,750,000
 '''
-print(revenue(15000))
+# print(revenue(15000))
+
+'''
+exmaple: f(x) = -2(x-1)**2 + 6
+'''
+
+def example_2(x):
+    return -2*(x-1)**2 + 6
+
+print(nsimplify((0)))
+
+
+'''
+3/2 is h
+'''
+
+print(nsimplify(example_2(0)))
+
+'''
+k is 11/2
+
+so maybe (2/3, 11/2)
+
+its actually (1,6) for some reason?
+
+it was just change tehs lop into a possative, and then just 6
+'''
