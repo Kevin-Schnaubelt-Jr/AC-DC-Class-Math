@@ -10,7 +10,7 @@
     line-height: 2;
 }
 body {
-    margin: 0;
+    margin-left: 4rem;
 }
 
 .page-index {
@@ -22,7 +22,7 @@ body {
     text-align: center;
 }
 
-#center-text {
+.center-text {
     text-align: center;
 }
 
@@ -33,3 +33,5 @@ body {
 .in-line-margin{
     margin: 2rem;
 }
+
+
