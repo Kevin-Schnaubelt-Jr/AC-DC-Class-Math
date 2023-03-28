@@ -1,5 +1,7 @@
 from sympy import *
 
+x = symbols('x')
+
 '''
 1) composite functions
 2) one-to-one function
@@ -108,13 +110,14 @@ g(x) = -1/4*(x - 4)
 '''
 
 def function_f(x):
-    return -4*x + 4
+    return nsimplify(simplify(-4*x + 4))
 
 def function_g(x):
-    return (-1/4)*(x - 4)
+    return nsimplify(simplify(-1/4*(x - 4)))
+    
 
-# print('f o g = ',function_f(function_g(2)))
-# print('g o f = ', function_g(function_f(2)))
+print('f o g = ',function_f(function_g(x)))
+print('g o f = ', function_g(function_f(x)))
 
 '''
 yep, both are x, so it's inverse.
@@ -132,5 +135,58 @@ def function_f2(x):
 def function_g2(x):
     return cbrt(x + 6)
 
-print('f o g = ',function_f2(function_g2(2)))
-print('g o f = ', function_g2(function_f2(2)))
+# print('f o g = ',function_f2(function_g2(2)))
+# print('g o f = ', function_g2(function_f2(2)))
+
+# this function with verify that the function is one to one.
+
+def one_to_one(f, a, b):
+    '''
+    f: function
+    a: lower bound
+    b: upper bound
+    '''
+    # create a list of all the values of f(x) for x in the range [a,b]
+    # f_values = [f(x) for x in range(a,b)]
+    f_values = []
+    for x in range(a,b):
+        f_values.append(f(x))
+    # check if the list has any duplicates
+    if len(f_values) == len(set(f_values)):
+        return True
+    else:
+        return False
+    
+# this function will verify that a function is the inverse of another function.
+def inverse(f, g, a, b):
+    '''
+    f: function
+    g: function
+    a: lower bound
+    b: upper bound
+    '''
+    # create a list of all the values of f(g(x)) for x in the range [a,b]
+    # f_values = [f(g(x)) for x in range(a,b)]
+    f_o_g_values = []
+    g_o_f_values = []
+    for x in range(a,b):
+        f_o_g_values.append(f(g(x)))
+    for x in range(a,b):
+        g_o_f_values.append(g(f(x)))
+
+    for index, value in enumerate(f_o_g_values):
+        if value != g_o_f_values[index]:
+            return 'Not inverse'
+    return 'Inverse'
+    
+# print(inverse(function_f, function_g, -10, 10))
+
+# make another inverse function that takes in sympy symbol x as an argument instead of a range.
+
+def inverse2(f, g, x):
+    if f(g(x)) == x and g(f(x)) == x:
+        return 'Inverse'
+    else:
+        return 'Not inverse'
+    
+print(inverse2(function_f, function_g, x))
