@@ -178,3 +178,37 @@ its actually (1,6) for some reason?
 
 it was just change tehs lop into a possative, and then just 6
 '''
+
+def cost(x):
+    return x**2 - 120*x + 7500
+
+# so a > 0, so it opens up. so it has a minimum
+a = 1
+b = -120
+h = -b / 2*a
+# now we can find k
+k = cost(h)
+# print(f'{h=} {k=}')
+# so the minimum marginal cost is 80, and it occurs at 2000 units.
+
+# lets find the vertex of a function that turns -2*(x - 1)**2 + 5
+def example_3(x):
+    return -2*(x-1)**2 + 8
+
+# so a < 0, so it opens down. so it has a maximum
+# so for the vertex, h = 1 and k = 8
+# to find the y-intercept, we just plug in 0 into the function
+print(example_3(0),'y-intercept')
+# to find the x-intercept, we let y = 0, and solve for x
+
+# for example 4, we have f(x) = -(x - 3)**2 + 3
+# so lets find the y-intercept
+def example_4(x):
+    return -(x-3)**2 + 3
+print(example_4(0),'y-intercept')
+
+# so for example 5, we have f(x) = (x-1)**2 + 2
+# so lets find the y-intercept
+def example_5(x):
+    return (x-1)**2 + 2
+print(example_5(0),'example_5 y-intercept')

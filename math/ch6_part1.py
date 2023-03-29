@@ -190,3 +190,29 @@ def inverse2(f, g, x):
         return 'Not inverse'
     
 print(inverse2(function_f, function_g, x))
+
+# alright lets do some homework problems.
+def function_f3(x):
+    return 8*x
+def function_g3(x):
+    return 6*x**2 + 9
+# question 1 is (fog)(4)
+# print('fog(4) = ', function_f3(function_g3(4)))
+# question 2 is (gof)(2)
+# print('gof(2) = ', function_g3(function_f3(2)))
+# question 3 is (fof)(1)
+# print('fof(1) = ', function_f3(function_f3(1)))
+# question 4 is (gog)(0)
+# print('gog(0) = ', function_g3(function_g3(0)))
+
+# alright lets make another function.
+# x = symbols('x')
+
+def function_f4(x):
+    return 3*sqrt(x)
+def function_g4(x):
+    return 5*x
+print('fog(4) = ', function_f4(function_g4(4)))
+print('gof(2) = ', function_g4(function_f4(2)))
+print('fof(1) = ', function_f4(function_f4(1)))
+print('gog(0) = ', function_g4(function_g4(0)))
