@@ -206,13 +206,54 @@ def function_g3(x):
 # print('gog(0) = ', function_g3(function_g3(0)))
 
 # alright lets make another function.
-# x = symbols('x')
+x = symbols('x')
 
 def function_f4(x):
-    return 3*sqrt(x)
+    return 9*x + 6
 def function_g4(x):
-    return 5*x
-print('fog(4) = ', function_f4(function_g4(4)))
-print('gof(2) = ', function_g4(function_f4(2)))
-print('fof(1) = ', function_f4(function_f4(1)))
-print('gog(0) = ', function_g4(function_g4(0)))
+    return 2*x
+# print('fog(x) = ', function_f4(function_g4(x)))
+# the domain of fog(x) is all real numbers.
+# print('gof(x) = ', function_g4(function_f4(x)))
+# the domain of gof(x) is all real numbers.
+# print('fof(x) = ', function_f4(function_f4(x)))
+# the domain of fof(x) is all real numbers.
+# print('gog(x) = ', function_g4(function_g4(x)))
+# the domain of gog(x) is all real numbers.
+
+def function_f5(x):
+    return 7*x + 5
+def function_g5(x):
+    return x**2
+# print('fog(x) = ', function_f5(function_g5(x)))
+# the domain of fog(x) is all real numbers.
+# print('gof(x) = ', simplify(function_g5(function_f5(x))) )
+# the domain of gof(x) is all real numbers.
+# print('fof(x) = ', function_f5(function_f5(x)))
+# the domain of fof(x) is all real numbers.
+# print('gog(x) = ', function_g5(function_g5(x)))
+# the domain of gog(x) is all real numbers.
+
+
+def function_f6(x):
+    return nsimplify( 9*x + 7)
+def function_g6(x):
+    return nsimplify( 1/9 * (x - 7))
+# print('fog(x) = ', simplify(nsimplify(function_f6(function_g6(x)))) )
+# determine if any values of x need to be excluded from f(g(x))
+# the domain of fog(x) is all real numbers.
+# print('gof(x) = ', function_g6(function_f6(x)))
+
+print(inverse2(function_f6, function_g6, x))
+
+def function_f7(x):
+    return nsimplify( x**3 - 5)
+def function_g7(x):
+    return nsimplify( cbrt(x + 5))
+print('fog(x) = ', function_f7(function_g7(x)) )
+print('gof(x) = ', powdenest( simplify( function_g7(function_f7(x)) )))
+print(inverse2(function_f7, function_g7, x))
+expression =  (x**3)**Rational(1,3)
+simp_expression = x**(3*Rational(1,3))
+print('expression = ', expression)
+print('simp_expression = ', simp_expression)
