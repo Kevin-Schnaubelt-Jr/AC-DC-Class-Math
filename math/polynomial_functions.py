@@ -100,3 +100,17 @@ y = 6*x**6 - 4*x**2 - x + 7
 so 2 or no positive zeros.
 how many negative zeros? plug in -x. there's 2 sign changes in there, so 2 or zero negative zeros.
 '''
+
+'''
+Potential rational zeroes
+f(x) = a_n*x**n + ... + a_0
+
+factors of a_0
+--------------
+factors of a_n
+
+focus on constant term on leading coefficient.
+
+eliminate any duplicates 
+f(x) = 3*x**4 - 5*x**3 + x**2 - x + 1
+'''
