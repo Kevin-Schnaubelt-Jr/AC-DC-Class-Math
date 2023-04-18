@@ -114,3 +114,13 @@ focus on constant term on leading coefficient.
 eliminate any duplicates 
 f(x) = 3*x**4 - 5*x**3 + x**2 - x + 1
 '''
+
+'''
+slant asymptote 
+oblique no H,A
+y = mx + b
+b = 3
+y = 2x + 3
+range all real #'s y
+intercepts y = mt (0,1) y = -1
+'''
